@@ -1,44 +1,81 @@
-# Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection
 
-A machine learning project to detect fraudulent credit card transactions using Logistic Regression.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?style=flat&logo=scikit-learn)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=flat&logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
 
-## Overview
+A machine learning project that detects fraudulent credit card transactions using **Logistic Regression**, built on a real-world dataset of 284,807 transactions.
 
-Credit card fraud detection is a classic imbalanced classification problem. This project tackles it by undersampling the majority class (legitimate transactions) to balance the dataset, then training a Logistic Regression model.
+---
 
-## Dataset
+## 🧠 Problem Statement
 
-- 284,807 transactions with 30 anonymized features (V1–V28), Amount, and Time
-- Only 492 fraud cases (0.17% of data) — highly imbalanced
-- Source: [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+Credit card fraud is a critical problem in the financial industry. The challenge lies in the **extreme class imbalance** — only 0.17% of transactions are fraudulent. This project addresses that with undersampling and binary classification.
 
-## Approach
+---
 
-1. Separated legitimate and fraudulent transactions
-2. Undersampled legitimate transactions to match fraud count (492 each)
-3. Split into 80/20 train-test with stratification
-4. Trained a Logistic Regression model
+## 📊 Dataset
 
-## Results
+| Property | Value |
+|---|---|
+| Total Transactions | 284,807 |
+| Fraudulent | 492 (0.17%) |
+| Legitimate | 284,315 |
+| Features | 30 anonymized (V1–V28) + Amount + Time |
 
-| Dataset  | Accuracy |
-|----------|----------|
-| Training | 94.79%   |
-| Testing  | 93.40%   |
+> Source: [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-## Files
+---
 
-- `CreditCardScamDetection.ipynb` — Full analysis and model training notebook
-- `test.py` — Streamlit web app for live fraud prediction
+## ⚙️ Approach
 
-## Tech Stack
+1. **EDA** — Explored class distribution, transaction amounts, and feature statistics
+2. **Undersampling** — Sampled 492 legitimate transactions to balance the classes
+3. **Train/Test Split** — 80/20 split with stratification
+4. **Model Training** — Logistic Regression (scikit-learn)
+5. **Evaluation** — Accuracy on both training and test sets
 
-Python, NumPy, pandas, scikit-learn, Streamlit
+---
 
-## Run the Web App
+## 📈 Results
+
+| Dataset | Accuracy |
+|---|---|
+| Training | **94.79%** |
+| Testing | **93.40%** |
+
+---
+
+## 🗂️ Project Structure
+
+```
+├── CreditCardScamDetection.ipynb   # EDA + model training notebook
+├── test.py                         # Streamlit web app for live prediction
+└── .gitignore
+```
+
+---
+
+## 🚀 Run the Web App
 
 ```bash
 pip install streamlit scikit-learn pandas numpy
 streamlit run test.py
 ```
-> Note: Place `creditcard.csv` in the same directory before running.
+
+> ⚠️ Place `creditcard.csv` in the same directory before running.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language** — Python
+- **Libraries** — NumPy, pandas, scikit-learn
+- **Web App** — Streamlit
+
+---
+
+## 👤 Author
+
+**Utkarsh** — [GitHub](https://github.com/Utkarsh7106) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HERE)
