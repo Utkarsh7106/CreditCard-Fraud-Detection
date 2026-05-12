@@ -78,4 +78,4 @@ streamlit run test.py
 
 ## 👤 Author
 
-**Utkarsh** — [GitHub](https://github.com/Utkarsh7106) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HERE)
+**Utkarsh** — [GitHub](https://github.com/Utkarsh7106) · [LinkedIn](www.linkedin.com/in/utkarshmishra7106)
